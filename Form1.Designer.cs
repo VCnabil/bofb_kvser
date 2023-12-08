@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.timer1_sysinfo = new System.Windows.Forms.Timer(this.components);
+            this.timer2_SendCan = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // timer1_sysinfo
+            // 
+            this.timer1_sysinfo.Interval = 3000;
             // 
             // Form1
             // 
@@ -42,6 +49,9 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1_sysinfo;
+        private System.Windows.Forms.Timer timer2_SendCan;
     }
 }
 
